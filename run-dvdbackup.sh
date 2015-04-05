@@ -7,7 +7,7 @@ mkdir -p "$RIPS" &> /dev/null
 docker rm -f dvdbackup
 
 docker run \
--ti \
+-ti --rm \
 --privileged \
 -v /etc/localtime:/etc/localtime:ro \
 -v /dev/sr0:/dev/dvd \
